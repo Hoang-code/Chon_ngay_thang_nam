@@ -24,8 +24,10 @@ function doingay(){
     }
 function doingaysiwtch(){
     let thang = Number(document.getElementById("thang").value);
+    let nam = Number(document.getElementById("nam").value);
     switch (thang){
         case 2:
+            
         document.getElementById("hienthingay").innerHTML = "Tháng" + " " + thang + " " + "có số ngày là 28 ngày hoặc 29 ngày";
         break
         case 1:
