@@ -26,9 +26,19 @@ function doingaysiwtch(){
     let thang = Number(document.getElementById("thang").value);
     let nam = Number(document.getElementById("nam").value);
     switch (thang){
-        case 2:
-            
-        document.getElementById("hienthingay").innerHTML = "Tháng" + " " + thang + " " + "có số ngày là 28 ngày hoặc 29 ngày";
+        case 2:         
+                if (nam % 4 ==0){
+                    if(nam % 100 == 0){
+                        if (nam % 400 == 0){
+                            document.getElementById("hienthingay").innerText = "tháng 2 có 29 ngày"
+                        } else
+                        document.getElementById("hienthingay").innerText = "tháng 2 có 28 ngày"
+                    } else
+                    document.getElementById("hienthingay").innerText = "tháng 2 có 29 ngày"
+                } else
+                document.getElementById("hienthingay").innerText = "tháng 2 có 28 ngày"
+         
+       // document.getElementById("hienthingay").innerHTML = "Tháng" + " " + thang + " " + "có số ngày là 28 ngày hoặc 29 ngày";
         break
         case 1:
         case 3:
