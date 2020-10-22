@@ -1,8 +1,8 @@
 function doingay(){
-    let thang = Number(document.getElementById("thang").value);
+    let thang = Number(document.getElementById("thang").value)
     let nam = Number(document.getElementById("nam").value);
     if (thang == 1 
-        || thang == 3
+       || thang == 3
         || thang == 5
         || thang == 7
         || thang == 8
@@ -19,18 +19,20 @@ function doingay(){
                 document.getElementById("hienthingay").innerText = "tháng 2 có 28 ngày"
             } else
             document.getElementById("hienthingay").innerText = "tháng 2 có 29 ngày"
-        } else
+        } else 
         document.getElementById("hienthingay").innerText = "tháng 2 có 28 ngày"
+    }
       
-     } else if (thang == 4 
+      else if (thang == 4 
         || thang == 6
         || thang == 9
         || thang == 11
          ){
        
-     document.getElementById("hienthingay").innerHTML = "Tháng" + " " + thang + " " + "có số ngày là 28 ngày hoặc 29 ngày";}
+     document.getElementById("hienthingay").innerHTML = "Tháng" + " " + thang + " " + "có số ngày là 30 ngày"}
+     else{
 
-    document.getElementById("hienthingay").innerHTML = "Tháng" + " " + thang + " " + "không tồn tại";
+    document.getElementById("hienthingay").innerHTML = "Tháng" + " " + thang + " " + "không tồn tại"}
        
     }
 function doingaysiwtch(){
